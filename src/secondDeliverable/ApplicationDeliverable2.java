@@ -12,6 +12,9 @@ public class ApplicationDeliverable2 {
 		LocalDate startDate = null;
 		LocalDate endDate = null;
 
+		/* User needs to input 2 dates so the program can determine the interval between them
+		 * Once that data is obtained from the user it is checked to ensure it is a date and
+		 * in the desired format. This process is repeated for both dates. */
 		System.out.println("Please enter your Start Date in the format YYYY-MM-DD.");
 
 		do {
@@ -32,7 +35,9 @@ public class ApplicationDeliverable2 {
 				System.out.println("Whoops! Please enter a date in the format YYYY-MM-DD");
 			}
 		} while (endDate == null);
-
+		
+		/* Interval is determined here with a basic conversion. The output is formated to 
+		 * one that is easily understandable to the user. */
 		Period p = Period.between(startDate, endDate);
 
 		System.out.println();
