@@ -1,3 +1,12 @@
+/*
+ * This is a program designed to take in 2 dates from the user, then output
+ * the interval between them. This program fulfills the second requirement 
+ * for entry into the Grand Circus Java Boot Camp.
+ * 
+ * Designed by: Lena Hand
+ * 17*October*2017
+ */
+
 package secondDeliverable;
 
 import java.time.LocalDate;
